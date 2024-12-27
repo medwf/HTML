@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text</title>
+    <style>
+      /*
+        height: default var line-height + ( const : padding top + padding button)
+        width : default 100%
+      */
+      p {
+        width: 500px;
+        height: 200px;
+      }
+
+      p {
+        /*
+          The font property is a shorthand property for:
+            font: font-style font-variant font-weight (font-size/line-height) font-family;
+            => Note: The font-size and font-family values are required.
+                If one of the other values is missing, their default value are used.
+        */
+        font-family: "Courier New", Courier, monospace;
+        font-size: large; /* Sets The size of the text. small large x-large ... */
+        line-height: 1.5; /* 1.5 create more space between text. 1.5 time font size */
+
+        /* color */
+        color: blue;
+
+        /* Text Alignment */
+        text-align: left; /* controle align horizontal left center right */
+        text-align-last: left; /* align the last line of a text */
+
+        direction: ltr; /* left to right or right to left */
+        /* unicode-bidi: bidi-override; change the text direction of an element  */
+
+        /* Decoration */
+
+        text-transform: capitalize; /* Controls the capitalization of text: uppercase lowercase ... */
+
+        border: 1px solid black;
+
+        border-radius: 5px;
+
+        background-color: lightblue;
+
+        padding: 16px;
+      }
+
+      span {
+        vertical-align: text-top; /* controle align vertical*/
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit animi
+      porro velit, reiciendis corporis perferendis debitis perspiciatis deleniti
+      rerum magni error illum quam voluptatum impedit pariatur.
+      <span>Inline Block</span>
+    </p>
+  </body>
+</html>
